@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Henegama Central College</title>
+<link rel="shortcut icon" href="favicon.png">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div id="header">Admission Form</div>
+<div id="sub-header">2023</div>
+    <fieldset>
+    <legend>Enter your details</legend>
+        <form action="data.php" method="post">
+        <dl>
+            <dt>First Name:</dt><dd><input type="text" name="fname" placeholder="Kumudu" required="yes"></dd>
+            <br>
+            <dt>Last Name:</dt><dd><input type="text" name="lname" placeholder="Gamlath"></dd>
+            <br>
+            <dt>Age:</dt><dd><input type="number" name="age" placeholder="19" required="yes" max="21" min="10"></dd>
+            <br>
+            <dt>Gender:</dt> 
+                <dd>Male:<input type="radio" name="gender" value="male" required="yes">
+                    Female:<input type="radio" name="gender" value="female"></dd>
+            <br>
+            <dt>Date of Birth:</dt><dd><input type="date" name="dob" required="yes"></dd>
+            <br>
+            <div class="list">
+            <dt>A/L Subject:</dt><dd><select name="subject" required="yes">   
+                <option>Maths</option>
+                <option>Bio</option>
+                <option>Art</option>
+                <option>ET</option>
+                <option>BST</option>
+            </select></dd>
+            <br>
+            <dt>Class:</dt><dd><select name="class" required="yes">
+                <option>12-A</option>
+                <option>12-B</option>
+                <option>12-C</option>
+                <option>12-D</option>
+                <option>12-E</option>
+                <option>12-F</option>
+                <option>12-G</option>
+            </select></dd>
+            </div>
+            <br>
+           <dt>Address:</dt><dd>
+            <textarea cols="20px" rows="10px" name="address" required="yes"></textarea></dd>
+            <br>
+            <dt>Telenumber:</dt><dd><input type="tel" name="tel" required="yes" placeholder="0771234567"></dd>
+            <br>
+            <dt>Email:</dt><dd><input type="email" name="email" placeholder="abc123@abc.com"></dd>
+            <br><br>
+            <input type="submit" value="Submit">
+
+        </dl>
+        </form>
+    </fieldset>
+</body>
+</html>
